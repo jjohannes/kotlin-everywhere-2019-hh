@@ -53,12 +53,13 @@ image::scan-httpclient-comparison.png[width=800,height=0%]
 
 == Thank you
 
+📽️ https://jjohannes.github.io/kotlin-everywhere-2019-hh[jjohannes.github.io/kotlin-everywhere-2019-hh]
 
-🐘 github.com/gradle/gradle
+🐘 https://github.com/gradle/gradle[github.com/gradle/gradle]
 
-🕊️ @jeoj
+🕊️ https://twitter.com/jeoj[@jeoj]
 
-😺 @jjohannes
+😺 https://github.com/jjohannes[@jjohannes]
 
 // include::chapters/04_extras.adoc[]
 

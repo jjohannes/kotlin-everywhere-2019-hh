@@ -14,7 +14,7 @@
 
 === Your Project as a Software Component
 
-[plantuml, components1, png, width=300, height=0%]
+[plantuml, components0, png, width=300, height=0%]
 ....
 !include <cloudinsight/cog>
 scale 300 width
@@ -137,14 +137,12 @@ rootProject.name = "kotlin-everywhere"
 `buildSrc/src/main/kotlin/MyProject.kt`
 [source,kotlin]
 ----
-object MyProject {
-    fun org.gradle.api.Project.configureMyProject() {
-        tasks.register("t1") {
-            inputs.dir("...")
-            ouptuts.file("...")
-            doLast {
-                // do some work
-            }
+fun org.gradle.api.Project.configureMyProject() {
+    tasks.register("t1") {
+        inputs.dir("...")
+        ouptuts.file("...")
+        doLast {
+            // do some work
         }
     }
 }
@@ -287,11 +285,11 @@ scale 650 width
 skinparam monochrome true
 skinparam defaultTextAlignment center
 
-[:user-data\n\n<&folder> data/user-data/...]
-[:account-data\n\n<&folder> data/account-data/...]
-[:services\n\n<&folder> services/services/...]
-[:desktop-app\n\n<&folder> apps/desktop-app/...]
-[:android-app\n\n<&folder> apps/android-app/...]
+[:user-data\n\n(<&cog> Java)\n<&folder> data/user-data/...]
+[:account-data\n\n(<&cog> Java)\n<&folder> data/account-data/...]
+[:services\n\n(<&cog> Kotlin)\n<&folder> services/services/...]
+[:desktop-app\n\n(<&cog> Kotlin)\n<&folder> apps/desktop-app/...]
+[:android-app\n\n(<&cog> Android)\n<&folder> apps/android-app/...]
 ....
 
 `settings.gradle.kts`

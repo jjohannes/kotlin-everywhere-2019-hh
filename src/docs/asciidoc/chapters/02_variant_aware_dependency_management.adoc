@@ -69,7 +69,7 @@ S<--DAPP
 [source,kotlin]
 ----
 val everythingYouNeedToRunMe by configurations.creating {
-    isCanBeResolved = false; isCanBeConsumed = true
+    isCanBeResolved = false; isCanBeConsumed = true // this is a variant!
 }
 ----
 
@@ -93,7 +93,7 @@ S<--DAPP : otherComponentsINeedToRun
 [source,kotlin]
 ----
 val everythingYouNeedToRunMe by configurations.creating {
-    isCanBeResolved = false; isCanBeConsumed = true
+    isCanBeResolved = false; isCanBeConsumed = true // this is a variant!
     extendsFrom(otherComponentsINeedToRun)
 }
 ----
@@ -103,7 +103,7 @@ val everythingYouNeedToRunMe by configurations.creating {
 [source,kotlin]
 ----
 val otherComponentsINeedToRun by configurations.creating {
-    isCanBeResolved = false; isCanBeConsumed = false
+    isCanBeResolved = false; isCanBeConsumed = false // this is a bucket!
 }
 dependencies {
     otherComponentsINeedToRun(project(":services"))
@@ -128,7 +128,7 @@ S<--DAPP : otherComponentsINeedToRun
 [source,kotlin]
 ----
 val pathToAllFiles by configurations.creating {
-    isCanBeResolved = true; isCanBeConsumed = true
+    isCanBeResolved = true; isCanBeConsumed = false // this is a tool!
     extendsFrom(otherComponentsINeedToRun)
 }
 tasks.register("allFiles") {
