@@ -57,7 +57,7 @@ image::scan-httpclient-comparison.png[width=800,height=0%]
 
 🐘 https://github.com/gradle/gradle[github.com/gradle/gradle]
 
-🕊️ https://twitter.com/jeoj[@jeoj]
+🗣️ https://mastodon.social/@jendrik[@jendrik@mastodon.social]
 
 😺 https://github.com/jjohannes[@jjohannes]
 
